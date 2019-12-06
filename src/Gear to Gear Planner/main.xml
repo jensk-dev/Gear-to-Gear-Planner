@@ -1,0 +1,47 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Frame hidden="true" name="GTGP_FRAME" parent="UIParent" toplevel="true" enableMouse="true">
+        <Frames>
+            <EditBox autoFocus="true" name="GTGP_URL" letters="3000" inherits="InputBoxTemplate">
+                <Size x="250" y="20" />
+                <Anchors>
+                    <Anchor point="CENTER">
+                        <Offset><AbsDimension x="3" y="20"/></Offset>
+                    </Anchor>
+                </Anchors>
+                <FontString inherits="ChatFontNormal" />
+            </EditBox>
+            <Button inherits="UIPanelButtonTemplate" text="Close" name="GTGP_CLOSE_BUTTON">
+                <Size x="80" y="22"/>
+                <Anchors>
+                    <Anchor point="CENTER">
+                        <Offset><AbsDimension y="-20"/></Offset>
+                    </Anchor>
+                </Anchors>
+                <NormalFont style="GameFontNormal"/>
+            </Button>
+        </Frames>
+        <Size>
+            <AbsDimension x="300" y="100" />
+        </Size>
+        <Anchors>
+            <Anchor point="CENTER"/>
+        </Anchors>
+        <Backdrop
+            bgFile="Interface\DialogFrame\UI-DialogBox-Background"
+            edgeFile="Interface\DialogFrame\UI-DialogBox-Border"
+            tile="true"
+        >
+            <BackgroundInsets>
+                <AbsInset left="11" right="12" top="12" bottom="11"/>
+            </BackgroundInsets>
+            <TileSize>
+                <AbsValue val="32"/>
+            </TileSize>
+            <EdgeSize>
+                <AbsValue val="32"/>
+            </EdgeSize>
+        </Backdrop>
+    </Frame>
+    <Script file="frame.lua"></Script>
+</Ui>

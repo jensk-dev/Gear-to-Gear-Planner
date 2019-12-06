@@ -1,0 +1,11 @@
+## Interface: 11302
+## Title: Gear to Gear Planner
+## Notes: Allows for quick gear exports to a Gear Planner - Wowhead URL
+## Author: pffScrub
+## Version: v1.3.7
+## DefaultState: enabled
+
+b64.lua
+mappings.lua
+main.xml
+main.lua
